@@ -1,3 +1,4 @@
+![BaxrenCalculator](BaxrenOS(1).png)
 # BaxrenCalculatorCLI
 Lokal olarak Linux Terminalinde çalışan açık kaynak, özgür yazılım olan gelişmiş bir hesap makinesi:
 
