@@ -1,4 +1,5 @@
 import math
+import sys
 
 def hesap_islemleri(işlem):
     if '+' in işlem:
@@ -58,23 +59,28 @@ def hesap_islemleri(işlem):
 
 def hesap_makinesi():
     print("BaxrenCalculator'a hoş geldiniz")
-    print("Yapılabilir işlemler: Toplama: 2+2, Çıkarma: 5-3, Çarpma: 4x5, Bölme: 10/2, Yüzde: 20%25, Sinüs: sin(30), Cosinüs: cos(30), Tanjant: tan(30), Karekök: sqrt(4), Logaritma: log(10), Üstel: exp(2), Permütasyon: 5perm3, Kombinasyon: 5comb3, Modül: 10mod3, Faktöriyel: 5fact. Çıkmak için 'q', verileri sıfırlamak için 'c' yazabilirsiniz.")
+    print("Yapılabilir işlemler: \n\nToplama: 2+2 \tÇıkarma: 5-3 \tÇarpma: 4x5 \tBölme: 10/2 \nYüzde: 20%25 \tSinüs: sin(30) \tCosinüs: cos(30) \tTanjant: tan(30) \nKarekök: sqrt(4) \tLogaritma: log(10) \tÜstel: exp(2) \tPermütasyon: 5perm3 \nKombinasyon: 5comb3 \tModül: 10mod3 \tFaktöriyel: 5fact \nÇıkmak için 'q', verileri sıfırlamak için 'c' yazabilirsiniz.")
 
     while True:
-        işlem = input("İşlemi giriniz: ")
-
-        if işlem.lower() == 'q':
-            print("Çıkış yapılıyor...")
-            break
-        elif işlem.lower() == 'c':
-            print("Veriler sıfırlandı.")
-            continue
-
         try:
-            sonuç = hesap_islemleri(işlem)
-            print(f"{işlem} = {sonuç}")
-        except Exception as e:
-            print(f"Hata: {e}")
+            işlem = input("İşlemi giriniz:\n")
+
+            if işlem.lower().strip() == 'q':
+                print("Çıkış yapılıyor...")
+                sys.exit()
+            elif işlem.lower().strip() == 'c':
+                print("Veriler sıfırlandı.")
+                continue
+
+            try:
+                sonuç = hesap_islemleri(işlem)
+                print(f"{işlem} = {sonuç}")
+            except Exception as e:
+                print(f"Hata: {e}")
+
+        except KeyboardInterrupt:
+            print('Çıkış yapılıyor.')
+            sys.exit()
 
 if __name__ == "__main__":
     hesap_makinesi()
