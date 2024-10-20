@@ -2,6 +2,8 @@
 # BaxrenCalculatorCLI
 Lokal olarak Linux Terminalinde çalışan açık kaynak, özgür yazılım olan gelişmiş bir hesap makinesi:
 
+**BİR BAXREN PROJECT YAZILIMIDIR**
+
 BaxrenCalculator Linux Terminalinde çalışan CLI sınıfında olan bir hesap makinesidir.
 Benim ilk projem olduğum için sıradan kullanıcılar için kurulması biraz uğraştırıcı olabilir.
 
