@@ -13,7 +13,7 @@ Yapılabilir işlemler: Toplama: 2+2, Çıkarma: 5-3, Çarpma: 4x5, Bölme: 10/2
 # Kurulum
 1: sudo apt install git
 
-2: git clone [GitHub - MrBaxren/BaxrenSearchTerminal](https://github.com/MrBaxren/BaxrenSearchTerminal.git)
+2: git clone [GitHub - MrBaxren/BaxrenSearchTerminal](https://github.com/[MrBaxren/BaxrenCalculatorCLI]).git)
 
 3: cd BaxrenSearchTerminal
 
