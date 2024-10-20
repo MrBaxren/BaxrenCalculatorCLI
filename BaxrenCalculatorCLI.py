@@ -28,6 +28,15 @@ def hesap_islemleri(işlem):
     elif 'tan' in işlem:
         sayı = float(işlem.replace('tan', ''))
         return math.tan(math.radians(sayı))
+    elif 'sec' in işlem:
+        sayı = float(işlem.replace('sec', ''))
+        return 1 / math.cos(math.radians(sayı))
+    elif 'csc' in işlem:
+        sayı = float(işlem.replace('csc', ''))
+        return 1 / math.sin(math.radians(sayı))
+    elif 'cot' in işlem:
+        sayı = float(işlem.replace('cot', ''))
+        return 1 / math.tan(math.radians(sayı))
     elif 'sqrt' in işlem:
         sayı = float(işlem.replace('sqrt', ''))
         return math.sqrt(sayı)
@@ -58,7 +67,7 @@ def hesap_islemleri(işlem):
 
 def hesap_makinesi():
     print("BaxrenCalculator'a hoş geldiniz")
-    print("Yapılabilir işlemler: Toplama: 2+2, Çıkarma: 5-3, Çarpma: 4x5, Bölme: 10/2, Yüzde: 20%25, Sinüs: sin(30), Cosinüs: cos(30), Tanjant: tan(30), Karekök: sqrt(4), Logaritma: log(10), Üstel: exp(2), Permütasyon: 5perm3, Kombinasyon: 5comb3, Modül: 10mod3, Faktöriyel: 5fact. Çıkmak için 'q', verileri sıfırlamak için 'c' yazabilirsiniz.")
+    print("Yapılabilir işlemler: Toplama: 2+2, Çıkarma: 5-3, Çarpma: 4x5, Bölme: 10/2, Yüzde: 20%25, Sinüs: sin(30), Cosinüs: cos(30), Tanjant: tan(30), Sekant: sec(30), Kosekant: csc(30), Cotanjant: cot(30), Karekök: sqrt(4), Logaritma: log(10), Üstel: exp(2), Permütasyon: 5perm3, Kombinasyon: 5comb3, Modül: 10mod3, Faktöriyel: 5fact. Çıkmak için 'q', verileri sıfırlamak için 'c' yazabilirsiniz.")
 
     while True:
         işlem = input("İşlemi giriniz: ")
