@@ -17,10 +17,10 @@ Yapılabilir işlemler: Toplama: 2+2, Çıkarma: 5-3, Çarpma: 4x5, Bölme: 10/2
 
 3: cd BaxrenSearchTerminal
 
-4:python BaxrenSearchTerminal.py
+4: python BaxrenSearchTerminal.py
 
 
 # Kullanım
-5-Terminalde home klasöründeyken **python3 BaxrenCalculatorCLI.py** komutunu girin ve artık rahatlıkla BaxrenCalculator programını kullanabilirsiniz.
+Terminalde home klasöründeyken **python3 BaxrenCalculatorCLI.py** komutunu girin ve artık rahatlıkla BaxrenCalculator programını kullanabilirsiniz.
 Basit 4 işlemden tutun Karekök almadan en karmaşık matematik işlemlerine...
 
